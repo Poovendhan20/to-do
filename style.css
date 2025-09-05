@@ -1,0 +1,72 @@
+/* Custom styles for the neumorphic design */
+:root {
+    /* New retro color scheme to match the background */
+    --bg-color-rgb: 250, 249, 246; /* Creamy white for RGBA usage */
+    --primary-color: #4a4a4a; /* Dark gray */
+    --shadow-dark: #d1ccc0;
+    --shadow-light: #ffffff;
+    --inset-shadow: inset 6px 6px 12px var(--shadow-dark), inset -6px -6px 12px var(--shadow-light);
+    --outset-shadow: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color);
+}
+
+.neumorphic-outset {
+    border-radius: 1rem;
+    /* Glassmorphism effect */
+    background: rgba(var(--bg-color-rgb), 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--outset-shadow);
+}
+
+.neumorphic-inset {
+    border-radius: 0.75rem;
+    background: transparent; /* See the blur through the inset */
+    box-shadow: var(--inset-shadow);
+}
+
+.neumorphic-button {
+    transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-button:hover {
+    box-shadow: var(--inset-shadow);
+}
+
+.neumorphic-button:active {
+    transform: translateY(2px);
+    box-shadow: var(--inset-shadow);
+}
+
+.task-item {
+    transition: all 0.3s ease;
+}
+
+.task-item.completed {
+    box-shadow: var(--inset-shadow);
+    color: #9fadbd;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+}
+
+/* Animation for task removal */
+.task-item.removing {
+    animation: fadeOut 0.4s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
