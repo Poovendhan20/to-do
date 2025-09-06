@@ -1,10 +1,12 @@
 
 A modern, browser-based to-do list application with a clean, tactile Neumorphic design. This app personalizes the experience by asking for your name and saves your tasks directly in your browser so you never lose them.
+
 Live Demo
-Check out the live application here: add-my-task-app.netlify.app
+
+Check out the live application here: <a href="add-my-task-app.netlify.app" target="_blank" rel="noopener noreferrer">Click To view </a>
 
 Screenshot
-<img width="1919" height="920" alt="Screenshot 2025-09-05 211815" src="https://github.com/user-attachments/assets/6439dff7-4209-4cee-8245-f72bf5864e7e" />To-Do App
+<img width="1919" height="920" alt="Screenshot 2025-09-05 211815" src="https://github.com/user-attachments/assets/6439dff7-4209-4cee-8245-f72bf5864e7e" />
 <img width="1919" height="927" alt="Screenshot 2025-09-05 211836" src="https://github.com/user-attachments/assets/d8c219fe-8807-4c07-a3bc-a7844c778360" />
 
 Features
